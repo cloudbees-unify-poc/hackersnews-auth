@@ -15,7 +15,7 @@ spec:
         app: hackers-auth
     spec:
       imagePullSecrets:
-      - name: ecr-registry
+      - name: ghcr-secret
       containers:
         - name: hackers-auth
           image: "{{ .Values.image.url }}"
